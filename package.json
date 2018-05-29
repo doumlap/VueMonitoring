@@ -1,0 +1,33 @@
+{
+  "name": "quasartsplayground",
+  "version": "1.0.0",
+  "description": "A Quasar Framework app",
+  "productName": "Quasar TS",
+  "cordovaId": "org.cordova.quasar.app",
+  "author": "dominic.lapointe@shine-factory.io",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.0.0-beta.49",
+    "awesome-typescript-loader": "^5.0.0",
+    "devtron": "1.4.0",
+    "electron": "2.0.0",
+    "electron-debug": "1.5.0",
+    "electron-devtools-installer": "2.2.4",
+    "quasar-cli": "^0.16.0",
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.8.3"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}
