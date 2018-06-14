@@ -6,15 +6,7 @@
         :glossy="$q.theme === 'mat'"
         :inverted="$q.theme === 'ios'"
       >
-        <q-btn
-          flat
-          dense
-          round
-          @click="leftDrawerOpen = !leftDrawerOpen"
-          aria-label="Menu"
-        >
-          <q-icon name="menu" />
-        </q-btn>
+        <q-btn flat dense round aria-label="Menu"><q-icon name="menu" /></q-btn>
 
         <q-toolbar-title>
           Quasar App
@@ -28,20 +20,18 @@
   </q-layout>
 </template>
 
-<script>
-import { openURL } from "quasar";
+<script lang='ts'>
+import Vue from "vue";
+import Component from "vue-class-component";
 
-export default {
-  name: "LayoutDefault",
-  data() {
-    return {
-      leftDrawerOpen: this.$q.platform.is.desktop
-    };
-  },
-  methods: {
-    openURL
-  }
-};
+@Component({ name: "DefaultLayout" })
+export default class DefaultLayout extends Vue {
+  private leftDrawerOpen = false;
+
+  private open = (url: string): void => {
+    console.log(url);
+  };
+}
 </script>
 
 <style>
