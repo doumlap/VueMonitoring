@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex flex-center">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
+    Setup page
   </q-page>
 </template>
 
@@ -11,12 +11,12 @@
 import Vue from "vue";
 import Component from "vue-class-component";
 
-@Component({ name: "Index" })
-export default class Index extends Vue {
+@Component({ name: "Setup" })
+export default class Setup extends Vue {
   constructor() {
-    super();
+      super();
 
-    console.log('index');
+      console.log('setup page');
   }
 }
 </script>
